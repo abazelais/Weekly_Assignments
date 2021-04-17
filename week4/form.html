@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>Forms</title>
+</head>
+<body>
+  <div class="magazine-form">
+  <h1>Magazine Subscription</h1>
+  <form action="http://www.rebol.com/cgi-bin/test-cgi.cgi" method="POST">
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" id="name" name="user_name" ></td>
+      </tr>
+      <tr>
+        <td>Street Address:</td>
+        <td><input type="text" id="street" name="user_street" ></td>
+      </tr>
+      <tr>
+        <td>City/Town:</td>
+        <td><input type="text" id="city" name="user_city" ></td>
+      </tr>
+      <tr>
+        <td>State: </td>
+        <td><input type="text" id="state" name="user_state" ></td>
+      </tr>
+      <tr>
+        <td>Zip Code: </td>
+        <td><input type="text" id="zipcode" name="user_zipcode"></td>
+      </tr>
+      <tr>
+        <td>Magazines:</td>
+        <td><input type="checkbox" id="news" value="interest_news" name="newsweek"><label for="news" class="light">Newsweek</label></td>
+        <td><input type="checkbox" id="time" value="interest_timemag" name="time"><label for="time" class="light">Time</label></td>
+        <td><input type="checkbox" id="sports" value="interest_sports" name="sports_illustrated"><label class="light" for="sports">Sports Illustrated</label></td>
+        <td><input type="checkbox" id="internet" value="interest_internet" name="internet_world"><label class="light" for="internet">Internet World</label></td>
+      </tr>
+
+      <tr>
+        <td>Payment Options:</td>
+        <td><input type="radio" id="visa" name="card" value="visa">VISA</input></td>
+        <td><input type="radio" id="discover" name="card" value="discover">Discover</input></td>
+        <td><input type="radio" id="mastercard" name="card" value="mastercard">MasterCard</input></td>
+      </tr> 
+      <tr>
+        <td>Card Number:</td>
+        <td><input type="text" id=card_number></td>
+        <td>Expiration Date:</td>
+        <td><input type="date" name="expiration"></td>
+      </tr>
+    </table>
+    <button type="submit">Subscribe</button>
+    <button type="reset">Reset</button>
+  </form>
+</div>
+<a href="../index.html">Return to Homepage</a>
+</body>
+</html>
